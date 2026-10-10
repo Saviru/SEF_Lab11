@@ -1,3 +1,4 @@
+import React from 'react';
 import { Routes, Route, NavLink } from "react-router-dom";
 import MenuPage from "./features/menu/pages/MenuPage";
 import DishDetailPage from "./features/menu/pages/DishDetailPage";

@@ -1,3 +1,5 @@
+import React from 'react';
+
 function DishCard({ dish }) {
     return (
       <div className="dish-card">

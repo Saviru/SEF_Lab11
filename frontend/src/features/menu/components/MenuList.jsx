@@ -1,3 +1,4 @@
+import React from 'react';
 import DishCard from './DishCard';
 
 function MenuList({ dishes }) {

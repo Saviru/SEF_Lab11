@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import MenuList from '../components/MenuList';
 import { useDebounce } from '../hooks/useDebounce';
 import { useFetch } from '../hooks/useFetch';
@@ -13,7 +13,7 @@ function MenuPage() {
   if (isLoading) return <p>Loading menu...</p>;
   if (error) return <p>Could not load menu: {error}</p>;
 
-  const filtered = dishes.filter((d) =>
+  const filtered = (dishes || []).filter((d) =>
     d.name.toLowerCase().includes(debounced.toLowerCase())
   );
 
